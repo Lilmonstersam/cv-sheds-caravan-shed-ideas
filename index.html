@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>15 Caravan Shed Ideas for Smarter Storage | CV Sheds Mockup</title>
-  <meta name="description" content="Long-form article mockup for CV Sheds caravan shed ideas, designed with improved navigation, image-led sections and clear conversion paths.">
+  <title>5 Caravan Shed Ideas for Smarter Storage | CV Sheds Mockup</title>
+  <meta name="description" content="Compare five practical caravan shed ideas with planning tables, real CV Sheds gallery examples and clear next steps.">
   <meta name="theme-color" content="#F37B2B">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,7 +60,8 @@
       text-decoration: none;
     }
 
-    button {
+    button,
+    select {
       font: inherit;
     }
 
@@ -198,7 +199,9 @@
     .hero {
       position: relative;
       overflow: hidden;
-      background: var(--color-soft);
+      background:
+        linear-gradient(90deg, rgba(247, 246, 244, 0.97), rgba(247, 246, 244, 0.86)),
+        url("https://cvsheds.com.au/wp-content/uploads/2025/03/TLP-6924.jpg") center / cover;
       border-bottom: 3px solid var(--color-primary);
     }
 
@@ -206,24 +209,24 @@
       content: "";
       position: absolute;
       inset: auto 0 0 0;
-      height: 120px;
+      height: 128px;
       background:
         repeating-linear-gradient(
           135deg,
-          rgba(0, 0, 0, 0.08) 0 1px,
+          rgba(0, 0, 0, 0.1) 0 1px,
           transparent 1px 15px
         );
-      opacity: 0.2;
+      opacity: 0.16;
       pointer-events: none;
     }
 
     .hero-grid {
       position: relative;
       display: grid;
-      grid-template-columns: minmax(0, 1.04fr) minmax(360px, 0.72fr);
+      grid-template-columns: minmax(0, 1.04fr) minmax(340px, 0.72fr);
       gap: 52px;
-      align-items: center;
-      padding: 56px 0 64px;
+      align-items: end;
+      padding: 52px 0 44px;
     }
 
     .eyebrow {
@@ -258,7 +261,7 @@
     }
 
     h1 {
-      max-width: 800px;
+      max-width: 820px;
       font-size: clamp(44px, 7vw, 82px);
     }
 
@@ -267,9 +270,9 @@
     }
 
     .hero-copy {
-      max-width: 680px;
+      max-width: 690px;
       margin: 22px 0 30px;
-      color: var(--color-muted);
+      color: #30302f;
       font-size: clamp(18px, 1.8vw, 23px);
       line-height: 1.42;
     }
@@ -314,31 +317,44 @@
       line-height: 1.05;
     }
 
-    .hero-media {
-      position: relative;
-      border: 10px solid #fff;
+    .hero-planner {
+      background: #fff;
+      border: 1px solid var(--color-border);
       box-shadow: var(--shadow-soft);
+    }
+
+    .hero-planner h2 {
+      padding: 22px 22px 0;
+      font-size: 31px;
+    }
+
+    .planner-list {
+      display: grid;
+      gap: 1px;
+      margin: 18px 0 0;
+      padding: 0;
+      background: var(--color-border);
+      list-style: none;
+    }
+
+    .planner-list li {
+      display: grid;
+      grid-template-columns: 88px minmax(0, 1fr);
+      gap: 12px;
+      padding: 15px 18px;
       background: #fff;
     }
 
-    .hero-media img {
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
+    .planner-list strong {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      line-height: 1;
     }
 
-    .hero-badge {
-      position: absolute;
-      right: -18px;
-      bottom: 22px;
-      width: min(180px, 48%);
-      background: var(--color-primary);
-      color: #fff;
-      padding: 18px;
-      font-family: var(--font-heading);
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 1.04;
-      box-shadow: var(--shadow-tight);
+    .planner-list span {
+      color: var(--color-muted);
+      font-size: 14px;
+      line-height: 1.35;
     }
 
     .mobile-jump {
@@ -437,6 +453,50 @@
       scroll-margin-top: 104px;
     }
 
+    .table-wrap {
+      margin: 24px 0 34px;
+      overflow-x: auto;
+      border: 1px solid var(--color-border);
+      background: #fff;
+    }
+
+    table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: collapse;
+      font-size: 16px;
+    }
+
+    th,
+    td {
+      padding: 16px;
+      border-bottom: 1px solid var(--color-border);
+      border-right: 1px solid var(--color-border);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    th:last-child,
+    td:last-child {
+      border-right: 0;
+    }
+
+    th {
+      background: var(--color-ink);
+      color: #fff;
+      font-family: var(--font-heading);
+      font-size: 21px;
+      line-height: 1.08;
+    }
+
+    td strong {
+      font-weight: 800;
+    }
+
     .planning-grid,
     .feature-grid {
       display: grid;
@@ -499,16 +559,16 @@
 
     .idea-card {
       display: grid;
-      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+      grid-template-columns: minmax(0, 0.88fr) minmax(0, 1fr);
       gap: 0;
-      margin: 26px 0;
+      margin: 28px 0;
       border: 1px solid var(--color-border);
       background: #fff;
       scroll-margin-top: 110px;
     }
 
     .idea-card:nth-of-type(even) {
-      grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+      grid-template-columns: minmax(0, 1fr) minmax(0, 0.88fr);
     }
 
     .idea-card:nth-of-type(even) .idea-media {
@@ -516,14 +576,29 @@
     }
 
     .idea-media {
-      min-height: 320px;
+      position: relative;
+      min-height: 380px;
       background: var(--color-accent);
     }
 
     .idea-media img {
       height: 100%;
-      min-height: 320px;
+      min-height: 380px;
       object-fit: cover;
+    }
+
+    .image-caption {
+      position: absolute;
+      left: 14px;
+      bottom: 14px;
+      max-width: calc(100% - 28px);
+      padding: 8px 10px;
+      background: rgba(0, 0, 0, 0.72);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
     }
 
     .idea-body {
@@ -558,6 +633,33 @@
       font-size: 12px;
       font-weight: 800;
       letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .variant-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .variant-item {
+      border: 1px solid var(--color-border);
+      background: var(--color-soft);
+    }
+
+    .variant-item img {
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+    }
+
+    .variant-item span {
+      display: block;
+      padding: 8px 10px;
+      color: var(--color-muted);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
     }
 
@@ -706,10 +808,7 @@
 
       .hero-grid {
         grid-template-columns: 1fr;
-      }
-
-      .hero-media {
-        max-width: 720px;
+        align-items: start;
       }
 
       .mobile-jump {
@@ -761,7 +860,7 @@
       }
 
       .hero-grid {
-        padding: 38px 0 44px;
+        padding: 38px 0 34px;
         gap: 30px;
       }
 
@@ -779,18 +878,18 @@
       .feature-grid,
       .inline-cta,
       .decision-grid,
-      .cta-panel {
+      .cta-panel,
+      .variant-strip {
         grid-template-columns: 1fr;
+      }
+
+      .planner-list li {
+        grid-template-columns: 1fr;
+        gap: 4px;
       }
 
       .cta-actions {
         justify-content: flex-start;
-      }
-
-      .hero-badge {
-        right: 12px;
-        bottom: 12px;
-        font-size: 20px;
       }
 
       .intro-panel,
@@ -812,7 +911,7 @@
       </a>
       <div class="header-actions">
         <a class="phone-link" href="tel:0354226644">03 5422 6644</a>
-        <a class="secondary-button" href="https://cvsheds.com.au/gallery/">Gallery</a>
+        <a class="secondary-button" href="https://cvsheds.com.au/gallery/all-sheds/">Gallery</a>
         <a class="primary-button" href="https://cvsheds.com.au/3d-shed/">Start 3D Design</a>
       </div>
     </div>
@@ -828,31 +927,37 @@
     <div class="container hero-grid">
       <div>
         <div class="eyebrow">Design inspiration</div>
-        <h1>15 Caravan Shed Ideas for Smarter Storage and <span>Easier Trips</span></h1>
-        <p class="hero-copy">A long-form guide layout that makes a detailed article easier to scan, compare and act on, with real CV Sheds gallery images leading each idea.</p>
+        <h1>5 Caravan Shed Ideas for Smarter Storage and <span>Easier Trips</span></h1>
+        <p class="hero-copy">A clearer guide to the five caravan storage layouts that are actually different: open shelter, shelter plus storage, caravanage, full enclosure and drive-through access.</p>
         <div class="hero-actions">
-          <a class="primary-button" href="#ideas">Browse the ideas</a>
-          <a class="secondary-button" href="https://cvsheds.com.au/3d-shed/">Try the 3D Designer</a>
+          <a class="primary-button" href="#ideas">Compare the ideas</a>
+          <a class="secondary-button" href="#planning">Start with planning</a>
         </div>
         <div class="meta-strip" aria-label="Article summary">
           <div class="meta-item">
             <span class="meta-label">Read time</span>
-            <span class="meta-value">11 min</span>
+            <span class="meta-value">8 min</span>
           </div>
           <div class="meta-item">
-            <span class="meta-label">Visual ideas</span>
-            <span class="meta-value">15</span>
+            <span class="meta-label">Core options</span>
+            <span class="meta-value">5</span>
           </div>
           <div class="meta-item">
-            <span class="meta-label">Best for</span>
-            <span class="meta-value">Caravan owners</span>
+            <span class="meta-label">Images</span>
+            <span class="meta-value">CV gallery</span>
           </div>
         </div>
       </div>
-      <figure class="hero-media">
-        <img src="https://cvsheds.com.au/wp-content/uploads/2025/03/TLP-6924.jpg" alt="High-clearance carport suitable for caravan storage">
-        <figcaption class="hero-badge">Real gallery images, not stock visuals</figcaption>
-      </figure>
+      <aside class="hero-planner" aria-label="Planning checklist">
+        <h2>Measure These First</h2>
+        <ul class="planner-list">
+          <li><strong>Height</strong><span>Highest roof accessory plus door, beam and upgrade clearance.</span></li>
+          <li><strong>Length</strong><span>Drawbar, spare wheel, rear bar and rear-mounted accessories.</span></li>
+          <li><strong>Width</strong><span>Doors, mirrors, awning access and walking room.</span></li>
+          <li><strong>Access</strong><span>Turning space, driveway slope, gate width and approach angle.</span></li>
+          <li><strong>Storage</strong><span>Annex walls, ramps, hoses, wheel chocks and camping gear.</span></li>
+        </ul>
+      </aside>
     </div>
   </section>
 
@@ -862,7 +967,8 @@
       <select id="sectionJump">
         <option value="#main">Article introduction</option>
         <option value="#planning">Planning basics</option>
-        <option value="#ideas">15 caravan shed ideas</option>
+        <option value="#comparison">Quick comparison</option>
+        <option value="#ideas">5 caravan shed ideas</option>
         <option value="#features">Design features</option>
         <option value="#designer">Try the 3D Designer</option>
         <option value="#decision">Enclosed shed or carport</option>
@@ -876,13 +982,14 @@
       <div class="toc-header">In this guide</div>
       <nav id="tocNav">
         <a href="#planning">Planning basics</a>
-        <a href="#ideas">15 caravan shed ideas</a>
+        <a href="#comparison">Quick comparison</a>
+        <a href="#ideas">5 caravan shed ideas</a>
         <a href="#idea-1">High-clearance carport</a>
-        <a href="#idea-5">Carport and shed combo</a>
-        <a href="#idea-8">Fully enclosed garage</a>
-        <a href="#idea-11">Drive-through shed</a>
+        <a href="#idea-2">Carport + storage combo</a>
+        <a href="#idea-3">Caravanage</a>
+        <a href="#idea-4">Fully enclosed garage</a>
+        <a href="#idea-5">Drive-through shed</a>
         <a href="#features">Design features</a>
-        <a href="#designer">Try the 3D Designer</a>
         <a href="#decision">Shed or carport?</a>
         <a href="#faq">FAQ</a>
         <a href="#next-step">Next step</a>
@@ -892,187 +999,169 @@
     <article class="article">
       <section class="intro-panel">
         <p>A good caravan shed should do more than keep the rain off. It should make your van easier to park, safer to store, faster to pack, and better protected from the kind of heat, wind, rain and dust Australian properties deal with every year.</p>
-        <p>The mockup uses a sticky table of contents, scannable article modules and image-led idea sections so readers can move through a long-form page without losing their place.</p>
+        <p>The clearest way to compare caravan shed ideas is to group overlapping roof and lean-to variants into distinct storage decisions. Roof shape becomes a design choice inside the right category, not a separate idea.</p>
       </section>
 
       <section id="planning">
         <h2>Before You Choose a Caravan Shed Design</h2>
-        <p>Most people looking for caravan storage sheds are trying to solve a mix of protection, access and space issues. The common mistake is designing around the caravan body length only, then forgetting the drawbar, spare wheel, roof-mounted air conditioning, solar panels, awning, mirrors and jockey wheel clearance.</p>
+        <p>Most people looking for caravan storage sheds are trying to solve a mix of protection, access and space issues. Start by measuring the caravan's full travel length, full width and highest fixed point, then add working room for loading, washing and safe reversing.</p>
         <div class="planning-grid">
           <div class="planning-item"><strong>Height</strong><span>Measure to the highest roof accessory, then allow extra clearance for the door opening, beams and future upgrades.</span></div>
           <div class="planning-item"><strong>Length</strong><span>Include the drawbar, rear bar, spare wheel and any rear-mounted accessories.</span></div>
           <div class="planning-item"><strong>Width</strong><span>Allow room for doors, mirrors, awning access and safe reversing.</span></div>
           <div class="planning-item"><strong>Access</strong><span>Check turning space, driveway slope, gate width and approach angle before finalising shed position.</span></div>
           <div class="planning-item"><strong>Protection</strong><span>Decide whether you need open shelter, partial walling or a fully enclosed caravan garage.</span></div>
-          <div class="planning-item"><strong>Approvals</strong><span>Larger caravan sheds often need site-specific engineering and council approval.</span></div>
+          <div class="planning-item"><strong>Storage</strong><span>Plan space for annex walls, hoses, levelling ramps, tools, chairs and camping gear.</span></div>
+        </div>
+      </section>
+
+      <section id="comparison">
+        <h2>Quick Comparison: Which Caravan Shed Idea Fits?</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Idea</th>
+                <th>Best for</th>
+                <th>Main advantage</th>
+                <th>Watch-outs</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>High-clearance carport</strong></td>
+                <td>Regular travellers who want fast access.</td>
+                <td>Open shelter with simple parking, washing and loading.</td>
+                <td>Less security and less side protection than an enclosed shed.</td>
+              </tr>
+              <tr>
+                <td><strong>Carport + storage combo</strong></td>
+                <td>Owners with camping gear, tools, mowers or trailers.</td>
+                <td>Keeps the caravan bay open while adding storage.</td>
+                <td>Storage must not narrow the caravan approach.</td>
+              </tr>
+              <tr>
+                <td><strong>Caravanage</strong></td>
+                <td>Homes that need a garage plus an open caravan bay.</td>
+                <td>Combines lock-up space with a dedicated caravan shelter.</td>
+                <td>Roofline, posts and bay width need to feel integrated.</td>
+              </tr>
+              <tr>
+                <td><strong>Fully enclosed garage</strong></td>
+                <td>Long-term storage and higher-value vans.</td>
+                <td>Better security, dust protection, weather protection and pest control.</td>
+                <td>Door height, ventilation and interior access become critical.</td>
+              </tr>
+              <tr>
+                <td><strong>Drive-through shed</strong></td>
+                <td>Larger blocks where reversing is difficult.</td>
+                <td>Lets the caravan enter one end and exit the other.</td>
+                <td>Needs suitable site access on both sides.</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <aside class="inline-cta" id="designer">
           <div>
             <strong>Test the proportions before you commit.</strong>
-            <p>Once the caravan measurements are known, readers can use CV Sheds' 3D Shed Designer to explore bay width, height, roof style and access before asking for a quote.</p>
+            <p>Once the caravan measurements are known, use CV Sheds' 3D Shed Designer to explore bay width, height, roof style and access before asking for a quote.</p>
           </div>
           <a class="primary-button" href="https://cvsheds.com.au/3d-shed/">Open 3D Designer</a>
         </aside>
       </section>
 
       <section id="ideas">
-        <h2>15 Image-Led Caravan Shed Ideas</h2>
-        <p>Each idea below is shown with an existing CV Sheds gallery image, helping the client see how the final article could use real project photography to support the copy.</p>
+        <h2>5 Caravan Shed Ideas</h2>
+        <p>Each category uses a relevant example from CV Sheds' All Sheds Gallery.</p>
 
         <section class="idea-card" id="idea-1">
-          <figure class="idea-media"><img src="https://cvsheds.com.au/wp-content/uploads/2025/03/TLP-6924.jpg" alt="Custom carport with high clearance for caravans"></figure>
+          <figure class="idea-media">
+            <img src="https://cvsheds.com.au/wp-content/uploads/2025/03/TLP-6924.jpg" alt="High-clearance carport suitable for caravan storage">
+            <figcaption class="image-caption">CV Sheds gallery image</figcaption>
+          </figure>
           <div class="idea-body">
             <div class="idea-number">1</div>
             <h3>High-Clearance Caravan Carport</h3>
-            <p>A high-clearance caravan carport is a simple option for owners who want overhead protection without fully enclosing the van. It suits properties where UV, rain, hail and leaf litter are the main concerns.</p>
+            <p>A high-clearance caravan carport is a simple option for owners who want overhead protection without fully enclosing the van. It suits UV, rain, hail and leaf litter protection while keeping the van easy to hitch, wash and pack.</p>
+            <p>The roof shape can be gable, skillion or flatter depending on the site. Those are variants of the same open-shelter idea.</p>
             <span class="idea-tag">Best for regular travellers</span>
+            <div class="variant-strip" aria-label="Roof style variants">
+              <div class="variant-item">
+                <img src="https://cvsheds.com.au/wp-content/uploads/2025/03/TLP-1584-1.jpg" alt="Gable roof carport variant">
+                <span>Gable variant</span>
+              </div>
+              <div class="variant-item">
+                <img src="https://cvsheds.com.au/wp-content/uploads/2025/03/carports__cv_sheds_carport_3.jpg" alt="Skillion roof carport variant">
+                <span>Skillion variant</span>
+              </div>
+              <div class="variant-item">
+                <img src="https://cvsheds.com.au/wp-content/uploads/2025/03/TLP-6910.jpg" alt="Flatter roof carport variant">
+                <span>Flat variant</span>
+              </div>
+            </div>
           </div>
         </section>
 
         <section class="idea-card" id="idea-2">
-          <figure class="idea-media"><img src="https://cvsheds.com.au/wp-content/uploads/2025/03/TLP-6910.jpg" alt="Carport with flat roof design and open-sided access"></figure>
+          <figure class="idea-media">
+            <img src="https://cvsheds.com.au/wp-content/uploads/2025/03/TLP-6938.jpg" alt="Carport and shed combo with open bay and storage">
+            <figcaption class="image-caption">CV Sheds gallery image</figcaption>
+          </figure>
           <div class="idea-body">
             <div class="idea-number">2</div>
-            <h3>Open-Sided Flat Roof Shelter</h3>
-            <p>An open-sided flat roof keeps the design clean and practical. It gives the caravan a dedicated covered bay while keeping manoeuvring simple on narrower driveways.</p>
-            <span class="idea-tag">Best for side access</span>
-          </div>
-        </section>
-
-        <section class="idea-card" id="idea-3">
-          <figure class="idea-media"><img src="https://cvsheds.com.au/wp-content/uploads/2025/03/TLP-1584-1.jpg" alt="Freestanding carport with gable roof on acreage"></figure>
-          <div class="idea-body">
-            <div class="idea-number">3</div>
-            <h3>Gable Roof Caravan Carport</h3>
-            <p>A gable roof has a traditional shed look and pairs neatly with many rural homes, farms and lifestyle blocks. The higher centreline can also create a more generous feel for taller vehicles.</p>
-            <span class="idea-tag">Best for acreage</span>
-          </div>
-        </section>
-
-        <section class="idea-card" id="idea-4">
-          <figure class="idea-media"><img src="https://cvsheds.com.au/wp-content/uploads/2025/03/carports__cv_sheds_carport_3.jpg" alt="Custom carport with skillion roof on residential block"></figure>
-          <div class="idea-body">
-            <div class="idea-number">4</div>
-            <h3>Skillion Roof Caravan Carport</h3>
-            <p>A skillion roof gives a modern, efficient profile and can work well beside contemporary homes, along fence lines, or on blocks where roof fall and drainage need careful planning.</p>
-            <span class="idea-tag">Best for modern homes</span>
-          </div>
-        </section>
-
-        <section class="idea-card" id="idea-5">
-          <figure class="idea-media"><img src="https://cvsheds.com.au/wp-content/uploads/2025/03/TLP-6938.jpg" alt="Carport and shed combo on a Victorian acreage property"></figure>
-          <div class="idea-body">
-            <div class="idea-number">5</div>
-            <h3>Carport and Shed Combo</h3>
-            <p>The open bay gives quick caravan access, while the enclosed shed space can hold tools, camping gear, spare parts, mowers and travel extras.</p>
+            <h3>Carport + Storage Combo</h3>
+            <p>The open bay gives quick caravan access, while the enclosed or covered storage area can hold tools, annex walls, fishing gear, spare parts, mowers, hoses, ramps and travel extras.</p>
+            <p>This category includes attached awnings, side storage bays and lean-to style storage where the goal is shelter plus a practical gear zone.</p>
             <span class="idea-tag">Best for gear storage</span>
           </div>
         </section>
 
-        <section class="idea-card" id="idea-6">
-          <figure class="idea-media"><img src="https://cvsheds.com.au/wp-content/uploads/2025/03/garages__cv_sheds_garage_28.jpg" alt="Custom garage with attached awning for vehicle shelter"></figure>
+        <section class="idea-card" id="idea-3">
+          <figure class="idea-media">
+            <img src="https://cvsheds.com.au/wp-content/uploads/2025/03/TLP-3924.jpg" alt="Garage with attached open caravan bay">
+            <figcaption class="image-caption">CV Sheds gallery image</figcaption>
+          </figure>
           <div class="idea-body">
-            <div class="idea-number">6</div>
-            <h3>Garage With Attached Awning</h3>
-            <p>If a garage or workshop is already needed, adding an attached awning can create a practical caravan bay without building a separate structure.</p>
-            <span class="idea-tag">Best multi-use layout</span>
-          </div>
-        </section>
-
-        <section class="idea-card" id="idea-7">
-          <figure class="idea-media"><img src="https://cvsheds.com.au/wp-content/uploads/2025/03/TLP-3924.jpg" alt="Custom garage with attached carport on residential block"></figure>
-          <div class="idea-body">
-            <div class="idea-number">7</div>
-            <h3>Garage and Caravan Bay</h3>
-            <p>This layout combines an enclosed garage with an open, high-clearance caravan bay. It gives security for cars and tools without fully enclosing the caravan.</p>
+            <div class="idea-number">3</div>
+            <h3>Caravanage: Garage Plus Open Bay</h3>
+            <p>A caravanage-style layout combines an enclosed garage with an open, high-clearance caravan bay. It gives security for cars and tools without making the caravan harder to access.</p>
+            <p>The best versions keep the roofline, colours, trim and post positions planned as one integrated build.</p>
             <span class="idea-tag">Best blended design</span>
           </div>
         </section>
 
-        <section class="idea-card" id="idea-8">
-          <figure class="idea-media"><img src="https://cvsheds.com.au/wp-content/uploads/2025/03/garages__cv_sheds_garage_13.jpg" alt="Custom garage with high clearance for larger vehicles"></figure>
+        <section class="idea-card" id="idea-4">
+          <figure class="idea-media">
+            <img src="https://cvsheds.com.au/wp-content/uploads/2025/03/garages__cv_sheds_garage_13.jpg" alt="High-clearance fully enclosed garage with roller door">
+            <figcaption class="image-caption">CV Sheds gallery image</figcaption>
+          </figure>
           <div class="idea-body">
-            <div class="idea-number">8</div>
+            <div class="idea-number">4</div>
             <h3>Fully Enclosed Caravan Garage</h3>
-            <p>A fully enclosed caravan garage offers the highest level of protection against sun, rain, dust, pests and unwanted attention.</p>
+            <p>A fully enclosed caravan garage offers the highest level of protection against sun, rain, dust, pests and unwanted attention. Door clearance is the detail to confirm early.</p>
+            <p>Natural light, ventilation and personal access doors also matter if the shed will be used for loading, cleaning or maintenance.</p>
             <span class="idea-tag">Best for long-term storage</span>
           </div>
         </section>
 
-        <section class="idea-card" id="idea-9">
-          <figure class="idea-media"><img src="https://cvsheds.com.au/wp-content/uploads/2025/03/garages__cv_sheds_garage_10.jpg" alt="Double garage with wide roller doors and concrete apron"></figure>
+        <section class="idea-card" id="idea-5">
+          <figure class="idea-media">
+            <img src="https://cvsheds.com.au/wp-content/uploads/2025/03/garages__cv_sheds_garage_11.jpg" alt="Shed with access points suitable for drive-through planning">
+            <figcaption class="image-caption">CV Sheds gallery image</figcaption>
+          </figure>
           <div class="idea-body">
-            <div class="idea-number">9</div>
-            <h3>Wide Roller Door Caravan Shed</h3>
-            <p>A generous door opening can reduce scraping, mirror clips and parking stress, especially if the driveway is angled or close to fences and gardens.</p>
-            <span class="idea-tag">Best for easier reversing</span>
-          </div>
-        </section>
-
-        <section class="idea-card" id="idea-10">
-          <figure class="idea-media"><img src="https://cvsheds.com.au/wp-content/uploads/2025/03/TLP-2a.jpg" alt="Garage and workshop combo with dual roller doors"></figure>
-          <div class="idea-body">
-            <div class="idea-number">10</div>
-            <h3>Dual Roller Door Garage and Workshop</h3>
-            <p>One bay can be designed for the caravan while the other stores the tow vehicle, work ute, trailer, mower or workshop equipment.</p>
-            <span class="idea-tag">Best for families</span>
-          </div>
-        </section>
-
-        <section class="idea-card" id="idea-11">
-          <figure class="idea-media"><img src="https://cvsheds.com.au/wp-content/uploads/2025/03/garages__cv_sheds_garage_11.jpg" alt="Garage and workshop with dual access points"></figure>
-          <div class="idea-body">
-            <div class="idea-number">11</div>
+            <div class="idea-number">5</div>
             <h3>Drive-Through Caravan Shed</h3>
-            <p>With openings at both ends, a drive-through layout can reduce the need to reverse a large caravan into a tight enclosed bay.</p>
+            <p>With openings at both ends, a drive-through layout can remove the need to reverse a large caravan into a tight bay. It is an access solution, not just another shed shape.</p>
+            <p>It works best where there is enough room to approach, pass through and loop around without sharp turns immediately before or after the shed.</p>
             <span class="idea-tag">Best for large blocks</span>
-          </div>
-        </section>
-
-        <section class="idea-card" id="idea-12">
-          <figure class="idea-media"><img src="https://cvsheds.com.au/wp-content/uploads/2025/03/garages__cv_sheds_garage_14.jpg" alt="Garage with lean-to storage and side entry door"></figure>
-          <div class="idea-body">
-            <div class="idea-number">12</div>
-            <h3>Lean-To Caravan Storage Bay</h3>
-            <p>A lean-to bay can add caravan storage beside a main shed while keeping the enclosed workspace free for tools, machinery and other equipment.</p>
-            <span class="idea-tag">Best add-on idea</span>
-          </div>
-        </section>
-
-        <section class="idea-card" id="idea-13">
-          <figure class="idea-media"><img src="https://cvsheds.com.au/wp-content/uploads/2025/03/TLP-35.jpg" alt="Premium garage with attached lean-to storage area"></figure>
-          <div class="idea-body">
-            <div class="idea-number">13</div>
-            <h3>Premium Shed With Covered Side Storage</h3>
-            <p>Matching colours, rooflines and trims can help a caravan shelter sit comfortably near a home or landscaped driveway.</p>
-            <span class="idea-tag">Best for street appeal</span>
-          </div>
-        </section>
-
-        <section class="idea-card" id="idea-14">
-          <figure class="idea-media"><img src="https://cvsheds.com.au/wp-content/uploads/2025/03/garages__cv_sheds_garage_19.jpg" alt="Enclosed garage with side windows for natural light"></figure>
-          <div class="idea-body">
-            <div class="idea-number">14</div>
-            <h3>Enclosed Garage With Natural Light</h3>
-            <p>Windows, translucent sheeting or well-placed personal access doors can make cleaning, loading and maintenance easier during the day.</p>
-            <span class="idea-tag">Best for maintenance</span>
-          </div>
-        </section>
-
-        <section class="idea-card" id="idea-15">
-          <figure class="idea-media"><img src="https://cvsheds.com.au/wp-content/uploads/2025/03/TLP-6949.jpg" alt="Custom carport with attached storage lean-to section"></figure>
-          <div class="idea-body">
-            <div class="idea-number">15</div>
-            <h3>Custom Carport With Attached Storage Lean-To</h3>
-            <p>The open bay keeps the caravan easy to access, while the smaller covered section can house hoses, ramps, tools, bins and travel accessories.</p>
-            <span class="idea-tag">Best compact storage</span>
           </div>
         </section>
       </section>
 
       <section id="features">
         <h2>Caravan Shed Design Features Worth Planning Early</h2>
-        <p>Once the reader has a preferred structure type, this feature grid helps them compare the details that make a caravan shed easier to live with.</p>
+        <p>Once the preferred structure type is clear, these details decide whether the shed is easy to live with.</p>
         <div class="feature-grid">
           <div class="feature-item"><strong>Extra height</strong><span>Allows for air conditioning, antennas, solar panels and future caravan upgrades.</span></div>
           <div class="feature-item"><strong>Wider bay spacing</strong><span>Makes reversing easier and reduces the chance of hitting posts or walls.</span></div>
@@ -1084,7 +1173,7 @@
         <aside class="inline-cta">
           <div>
             <strong>Turn this checklist into a shed concept.</strong>
-            <p>The 3D Designer CTA fits naturally here because readers have just compared height, access, power and storage features.</p>
+            <p>Move from measurements to a practical layout by comparing height, access, power and storage in the 3D Designer.</p>
           </div>
           <a class="primary-button" href="https://cvsheds.com.au/3d-shed/">Design Your Shed</a>
         </aside>
@@ -1092,15 +1181,15 @@
 
       <section id="decision" class="decision-band">
         <h2>Enclosed Caravan Shed or Open Caravan Carport?</h2>
-        <p>This high-contrast comparison gives readers a fast decision point before they reach the FAQ and call to action.</p>
+        <p>An enclosed caravan shed is usually better for security, dust, pest control and long-term protection. An open caravan carport is often better when convenience, airflow, regular access and manoeuvrability are the priority.</p>
         <div class="decision-grid">
           <div class="decision-option">
             <h3>Choose enclosed</h3>
-            <p>Better when security, dust control, pest protection and long-term storage matter most.</p>
+            <p>Better when the caravan sits unused for long periods or needs maximum weather and security protection.</p>
           </div>
           <div class="decision-option">
             <h3>Choose open</h3>
-            <p>Better when convenience, airflow, regular access and manoeuvrability are the priority.</p>
+            <p>Better when the caravan is used often and washing, packing, hitching and airflow matter most.</p>
           </div>
         </div>
       </section>
@@ -1118,7 +1207,7 @@
           </details>
           <details>
             <summary>Should I choose a gable, skillion or flat roof?</summary>
-            <p>Gable roofs suit classic shed designs and acreage properties. Skillion roofs can look more modern and help manage water direction on narrow blocks. Flat roof carports can work well where a clean, low-profile appearance is important.</p>
+            <p>Treat roof shape as a design decision, not a separate caravan shed idea. The best roof depends on the site, drainage, aesthetics and clearance requirements.</p>
           </details>
           <details>
             <summary>Do caravan sheds need council approval?</summary>
@@ -1130,7 +1219,7 @@
       <section id="next-step" class="cta-panel">
         <div>
           <h2>Build Around the Way You Travel</h2>
-          <p>The final CTA gives readers two natural paths: build a quick 3D concept or talk to CV Sheds about the site, approvals and quote.</p>
+          <p>Start with the van, the block and the travel routine, then choose the storage category that makes every trip easier.</p>
         </div>
         <div class="cta-actions">
           <a class="primary-button" href="https://cvsheds.com.au/3d-shed/">Start 3D Design</a>
@@ -1143,7 +1232,7 @@
   <footer class="footer">
     <div class="container">
       <span>CV Sheds caravan shed ideas mockup</span>
-      <span>Static HTML prepared for GitHub Pages review</span>
+      <span>Static HTML prepared for review</span>
     </div>
   </footer>
 
